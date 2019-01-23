@@ -128,7 +128,7 @@ def clean_snap(code_list,input_dir=None):#清理snap
             except Exception as e:  
                 print (e)
 
-def load_SZL2(code_list):
+def load_SZL2(code_list,input_dir):
     for root, dirnames, filenames in os.walk(input_dir):
         for filename in filenames[:2]:
             #print filename.endswith(suffix)
